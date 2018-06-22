@@ -1,0 +1,162 @@
+<XPJ version="4">
+
+	<Project name="ThreadFrac" version="1">
+		<Export platform="win32" tool="vc7">../vc7</Export>
+		<Export platform="win32" tool="vc8">../vc8</Export>
+		<Export platform="win32" tool="vc9">../vc9</Export>
+
+		<Target name="ThreadFrac">
+			<Export platform="win32" tool="vc7">../vc7</Export>
+			<Export platform="win32" tool="vc8">../vc8</Export>
+			<Export platform="win32" tool="vc9">../vc9</Export>
+
+			<Configuration name="default" platform="Win32" type="exe">
+				<Preprocessor type="define">
+					WIN32
+					_WINDOWS
+					UNICODE=1
+					_CRT_SECURE_NO_DEPRECATE
+          DEBUG_SERVER
+          USE_MEMORY_TRAPPING=1
+          OPEN_SOURCE=1
+				</Preprocessor>
+				<CFlags tool="vc8">/wd4996</CFlags>
+ 				<LFlags tool="vc8">/NODEFAULTLIB:libcp.lib</LFlags>
+			</Configuration>
+
+			<Configuration name="debug">
+				<OutDir>../../bin/win32</OutDir>
+				<OutFile>ThreadFracDEBUG.exe</OutFile>
+				<CFlags>/WX /W4 /fp:fast /WX /MDd /ZI</CFlags>
+				<LFlags>/DEBUG</LFlags>
+				<Preprocessor type="define">
+					_DEBUG
+				</Preprocessor>
+				<SearchPaths type="header">
+          ../../include
+          ../../include/common/snippets
+          ../../include/common/compression
+          ../../include/MeshImport
+          ../../app
+				</SearchPaths>
+				<SearchPaths type="library">
+					../../ext/DirectX_October2006
+				</SearchPaths>
+				<Libraries>
+				</Libraries>
+			</Configuration>
+
+			<Configuration name="release">
+				<OutDir>../../bin/win32</OutDir>
+				<OutFile>ThreadFrac.exe</OutFile>
+				<CFlags>/Zi /WX /W4 /fp:fast /WX /MD /O2</CFlags>
+				<LFlags>/DEBUG</LFlags>
+				<Preprocessor type="define">
+					NDEBUG
+				</Preprocessor>
+				<SearchPaths type="header">
+          ../../include
+          ../../app
+          ../../include/common/snippets
+          ../../include/MeshImport
+				</SearchPaths>
+				<SearchPaths type="library">
+					../../ext/DirectX_October2006
+				</SearchPaths>
+				<Libraries>
+				</Libraries>
+			</Configuration>
+
+			<Libraries>
+				odbc32.lib
+				odbccp32.lib
+				winmm.lib
+				comctl32.lib
+				pdh.lib
+				shlwapi.lib
+				OpenGL32.lib
+				GLU32.lib
+				Ws2_32.lib
+				dbghelp.lib
+				d3d9.lib
+				d3dx9.lib
+				dxerr9.lib
+				dxguid.lib
+				dinput8.lib
+				dsound.lib
+        	Strmiids.lib
+        	Quartz.lib
+			</Libraries>
+
+			<SearchPaths type="header">
+				../../app/ThreadFrac
+        ../../src
+        ../../include
+				../../ext/DirectX_October2006
+			</SearchPaths>
+			<Files name="DirectX Header Files" root="../../ext/DirectX_October2006" type="header">
+			</Files>
+			<Files name="resources" root="../../app/ThreadFrac">
+			  *.rc
+			</Files>
+			<Files name="Internal Header Files" root="../../app/ThreadFrac" type="header">
+				*.h
+			</Files>
+			<Files name="Shared Application Source" root="../../app/shared" type="header">
+        MeshSystem/*.cpp
+        MeshSystem/*.h
+			</Files>
+
+			<Files name="PD3D" root="../../src/pd3d" type="header">
+			 *.cpp
+			 *.h
+			</Files>
+
+			<Files name="PD3D Header" root="../../include/pd3d" type="header">
+			 *.h
+			</Files>
+
+			<Files name="Source Files" root="../../app/ThreadFrac" type="source">
+				*.cpp
+			</Files>
+			<Files name="MeshImport Files" root="../../include/MeshImport" type="source">
+				*.cpp
+               *.h
+			</Files>
+			<Files name="Common Source Files" root="../../src/common" type="source">
+		        tui/*.cpp
+		        tui/*.h
+		        Dxut/*.cpp
+		        Dxut/*.h
+		        rtin/*.cpp
+		        rtin/*.h
+		        ttmath/*.cpp
+		        ttmah/*.h
+			</Files>
+
+			<Files name="Depenency Files" root="../../include/common" type="source">
+				binding/*.cpp
+        		binding/*.h
+				ResourceInterface/*.cpp
+        		ResourceInterface/*.h
+         		snippets/*.inl
+         		snippets/*.c
+         		snippets/*.cpp
+         		snippets/*.h
+        		compression/*.cpp
+        		compression/*.c
+        		compression/*.h
+			</Files>
+			<Files name="Plugin Dependencies" root="../../include" type="source">
+        Pd3d/*.h
+        RenderDebug/*.h
+			</Files>
+			<Dependencies type="link">
+			  Pd3d
+			</Dependencies>
+
+		</Target>
+
+	</Project>
+
+</XPJ>
