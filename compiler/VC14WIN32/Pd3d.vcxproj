@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B098AAC-BDE4-A37E-9077-D544BD9A6CBE}</ProjectGuid>
+    <RootNamespace>Pd3d</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <OutDir>./../../bin/win32\</OutDir>
+    <IntDir>./Win32/Pd3d/debug\</IntDir>
+    <TargetExt>.dll</TargetExt>
+    <TargetName>Pd3dDEBUG</TargetName>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <SkipCopyingSymbolsToOutputDirectory>true</SkipCopyingSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <ClCompile>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalOptions>/W4</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./../../include;./../../src;./../../include/common/Foundation;./../../include/common/snippets;./../../ext/DirectX_June2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE=1;PD3D_EXPORTS;USE_MEMORY_TRAPPING=1;_DEBUG;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/DEBUG</AdditionalOptions>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;winmm.lib;comctl32.lib;pdh.lib;shlwapi.lib;OpenGL32.lib;GLU32.lib;Ws2_32.lib;dbghelp.lib;d3d9.lib;dxerr.lib;dxguid.lib;dinput8.lib;dsound.lib;Strmiids.lib;Quartz.lib;d3dx9d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Pd3dDEBUG.dll</OutputFile>
+      <AdditionalLibraryDirectories>./../../ext/DirectX_June2010/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(OutDir)/Pd3dDEBUG.dll.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>./../../lib/win32/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+    </ResourceCompile>
+    <ProjectReference>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <OutDir>./../../bin/win32\</OutDir>
+    <IntDir>./Win32/Pd3d/release\</IntDir>
+    <TargetExt>.dll</TargetExt>
+    <TargetName>Pd3d</TargetName>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <SkipCopyingSymbolsToOutputDirectory>true</SkipCopyingSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalOptions>/W4</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>./../../include;./../../src;./../../include/common/Foundation;./../../include/common/snippets;./../../ext/DirectX_June2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE=1;PD3D_EXPORTS;USE_MEMORY_TRAPPING=1;NDEBUG;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;winmm.lib;comctl32.lib;pdh.lib;shlwapi.lib;OpenGL32.lib;GLU32.lib;Ws2_32.lib;dbghelp.lib;d3d9.lib;dxerr.lib;dxguid.lib;dinput8.lib;dsound.lib;Strmiids.lib;Quartz.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Pd3d.dll</OutputFile>
+      <AdditionalLibraryDirectories>./../../ext/DirectX_June2010/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(OutDir)/Pd3d.dll.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>./../../lib/win32/$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+    </ResourceCompile>
+    <ProjectReference>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Pd3d\AgScreenPipe.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\Pd3d\g_terrain.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\Pd3d\Pd3d.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\Pd3d\shader.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\Pd3d\water.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\Pd3d\wood.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\Pd3d\zvidcap.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Pd3d\Ag.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\Pd3d\AgScreenPipe.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\Pd3d\shader.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\Pd3d\terrain.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\Pd3d\water.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\Pd3d\wood.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\Pd3d\zvidcap.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Pd3d\pd3d.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ext\DirectX_June2010\audiodefs.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\comdecl.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D2D1.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D2D1Helper.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D2DBaseTypes.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D2Derr.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3D10.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3D10effect.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3d10misc.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3d10sdklayers.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3D10shader.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3D10_1.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3D10_1shader.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3D11.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3D11SDKLayers.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3D11Shader.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3d9.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3d9caps.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3d9types.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3Dcommon.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3Dcompiler.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DCSX.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DX10.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx10async.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DX10core.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DX10math.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DX10mesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DX10tex.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DX11.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DX11async.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DX11core.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\D3DX11tex.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9anim.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9core.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9effect.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9math.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9mesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9shader.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9shape.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9tex.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\d3dx9xof.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\Dcommon.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\dinput.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\dinputd.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\dsconf.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\dsetup.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\dsound.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\DWrite.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\dxdiag.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\DxErr.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\dxfile.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\DXGI.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\DXGIFormat.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\DXGIType.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\dxsdkver.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\gameux.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\PIXPlugin.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\rmxfguid.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\rmxftmpl.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\rpcsal.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\X3DAudio.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\xact3.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\xact3d3.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\xact3wb.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\XAPO.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\XAPOBase.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\XAPOFX.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\XAudio2.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\XAudio2fx.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\XDSP.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\XInput.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\xma2defs.h">
+    </ClInclude>
+    <ClInclude Include="..\..\ext\DirectX_June2010\xnamath.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\include\common\snippets\FloatMath.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\FloatMath.inl">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\FloatMath.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\inparser.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\inparser.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\KeyValueIni.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\KeyValueIni.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\keyvalue.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\keyvalue.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\sutil.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\sutil.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\stringdict.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\stringdict.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\stable.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\cparser.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\cparser.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\timedevent.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\timedevent.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\gauss.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\gauss.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\memory.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\memory.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\KdTree.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\filesystem.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\filesystem.h">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\nvstl.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\common\comlayer\comlayer.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\src\common\comlayer\comlayer.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

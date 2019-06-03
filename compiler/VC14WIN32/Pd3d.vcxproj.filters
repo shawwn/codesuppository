@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="Source Files">
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\src\Pd3d\AgScreenPipe.cpp">
+			<Filter>Source Files</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\Pd3d\g_terrain.cpp">
+			<Filter>Source Files</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\Pd3d\Pd3d.cpp">
+			<Filter>Source Files</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\Pd3d\shader.cpp">
+			<Filter>Source Files</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\Pd3d\water.cpp">
+			<Filter>Source Files</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\Pd3d\wood.cpp">
+			<Filter>Source Files</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\Pd3d\zvidcap.cpp">
+			<Filter>Source Files</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="Internal Header Files">
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\src\Pd3d\Ag.h">
+			<Filter>Internal Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\src\Pd3d\AgScreenPipe.h">
+			<Filter>Internal Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\src\Pd3d\shader.h">
+			<Filter>Internal Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\src\Pd3d\terrain.h">
+			<Filter>Internal Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\src\Pd3d\water.h">
+			<Filter>Internal Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\src\Pd3d\wood.h">
+			<Filter>Internal Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\src\Pd3d\zvidcap.h">
+			<Filter>Internal Header Files</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="Public Header Files">
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\include\Pd3d\pd3d.h">
+			<Filter>Public Header Files</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="DirectX Header Files">
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\ext\DirectX_June2010\audiodefs.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\comdecl.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D2D1.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D2D1Helper.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D2DBaseTypes.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D2Derr.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3D10.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3D10effect.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3d10misc.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3d10sdklayers.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3D10shader.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3D10_1.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3D10_1shader.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3D11.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3D11SDKLayers.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3D11Shader.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3d9.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3d9caps.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3d9types.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3Dcommon.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3Dcompiler.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DCSX.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DX10.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx10async.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DX10core.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DX10math.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DX10mesh.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DX10tex.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DX11.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DX11async.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DX11core.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\D3DX11tex.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9anim.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9core.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9effect.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9math.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9mesh.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9shader.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9shape.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9tex.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\d3dx9xof.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\Dcommon.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\dinput.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\dinputd.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\dsconf.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\dsetup.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\dsound.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\DWrite.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\dxdiag.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\DxErr.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\dxfile.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\DXGI.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\DXGIFormat.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\DXGIType.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\dxsdkver.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\gameux.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\PIXPlugin.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\rmxfguid.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\rmxftmpl.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\rpcsal.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\X3DAudio.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\xact3.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\xact3d3.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\xact3wb.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\XAPO.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\XAPOBase.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\XAPOFX.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\XAudio2.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\XAudio2fx.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\XDSP.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\XInput.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\xma2defs.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ext\DirectX_June2010\xnamath.h">
+			<Filter>DirectX Header Files</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="Common Include-Binding Files">
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="Common Include-Binding Files\snippets">
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\include\common\snippets\FloatMath.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\FloatMath.inl">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\common\snippets\FloatMath.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\inparser.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\inparser.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\KeyValueIni.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\KeyValueIni.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\keyvalue.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\keyvalue.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\sutil.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\sutil.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\stringdict.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\stringdict.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\common\snippets\stable.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\cparser.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\cparser.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\timedevent.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\timedevent.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\gauss.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\gauss.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\memory.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\memory.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\common\snippets\KdTree.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\filesystem.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\include\common\snippets\filesystem.h">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClInclude>
+		<ClCompile Include="..\..\include\common\snippets\nvstl.cpp">
+			<Filter>Common Include-Binding Files\snippets</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="Common Source Files">
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="Common Source Files\comlayer">
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\src\common\comlayer\comlayer.cpp">
+			<Filter>Common Source Files\comlayer</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\src\common\comlayer\comlayer.h">
+			<Filter>Common Source Files\comlayer</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+	</ItemGroup>
+</Project>
