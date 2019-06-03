@@ -18,6 +18,8 @@ Decomposed into a set of convex hulls:
 
 ![image](https://user-images.githubusercontent.com/59632/58806066-f87fca80-85da-11e9-8682-f5a3658444a7.png)
 
-Notably, this algorithm does not use voxels. Therefore it may be more efficient than algorithms like [HACD](https://github.com/kmammou/v-hacd).
+### More info?
+
+Notably, this algorithm does not use voxels. It may be more efficient than voxel-based solutions like [HACD](https://github.com/kmammou/v-hacd). It's robust against malformed meshes and fast enough to do realtime decomposition on mobile phones.
 
 Hulls usually take a few seconds to generate regardless of the complexity of the input mesh. (The hulls in the screenshot above took around 10 seconds to generate.)
