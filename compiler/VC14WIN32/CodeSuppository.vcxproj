@@ -873,14 +873,6 @@
     <ClInclude Include="..\..\include\common\snippets\winmsg.h">
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\include\Pd3d\pd3d.h">
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
