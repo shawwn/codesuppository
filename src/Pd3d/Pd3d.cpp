@@ -84,17 +84,8 @@
 #include "ResourceInterface.h"
 
 RESOURCE_INTERFACE::ResourceInterface *gResourceInterface=0;
-//NVSHARE::Pd3d *gPd3d=0;
+PD3D_API NVSHARE::Pd3d *gPd3d;
 
-#ifdef WIN32
-#ifdef PD3D_EXPORTS
-#define PD3D_API __declspec(dllexport)
-#else
-#define PD3D_API __declspec(dllimport)
-#endif
-#else
-#define PD3D_API
-#endif
 
 bool doShutdown(void);
 

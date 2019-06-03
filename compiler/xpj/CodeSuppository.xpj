@@ -1,16 +1,16 @@
 <XPJ version="4">
 
 	<Project name="CodeSuppository" version="1">
-		<Export platform="win32" tool="vc7">../vc7</Export>
-		<Export platform="win32" tool="vc8">../vc8</Export>
-		<Export platform="win32" tool="vc9">../vc9</Export>
+    <Export platform="win32" tool="vc14" type="exe">../vc14win32</Export>
 
 		<Target name="CodeSuppository">
-			<Export platform="win32" tool="vc7">../vc7</Export>
-			<Export platform="win32" tool="vc8">../vc8</Export>
-			<Export platform="win32" tool="vc9">../vc9</Export>
+      <Export platform="win32" tool="vc14" type="exe">../vc14win32</Export>
 
-			<Configuration name="default" platform="Win32" type="exe">
+			<Configuration name="debug" type="exe" platform="win32">
+				<OutDir>../../bin/win32</OutDir>
+				<OutFile>CodeSuppositoryDEBUG.exe</OutFile>
+				<CFlags>/W4 /fp:fast /MDd /ZI</CFlags>
+				<LFlags>/DEBUG</LFlags>
 				<Preprocessor type="define">
 					WIN32
 					_WINDOWS
@@ -19,17 +19,7 @@
           DEBUG_SERVER
           USE_MEMORY_TRAPPING=1
           OPEN_SOURCE=1
-				</Preprocessor>
-				<CFlags tool="vc8">/wd4996</CFlags>
- 				<LFlags tool="vc8">/NODEFAULTLIB:libcp.lib</LFlags>
-			</Configuration>
-
-			<Configuration name="debug">
-				<OutDir>../../bin/win32</OutDir>
-				<OutFile>CodeSuppositoryDEBUG.exe</OutFile>
-				<CFlags>/WX /W4 /fp:fast /WX /MDd /ZI</CFlags>
-				<LFlags>/DEBUG</LFlags>
-				<Preprocessor type="define">
+          _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 					_DEBUG
 				</Preprocessor>
 				<SearchPaths type="header">
@@ -40,18 +30,44 @@
           ../../app
 				</SearchPaths>
 				<SearchPaths type="library">
-					../../ext/DirectX_October2006
+					../../ext/DirectX_June2010/x86
 				</SearchPaths>
 				<Libraries>
+          odbc32.lib
+          odbccp32.lib
+          winmm.lib
+          comctl32.lib
+          pdh.lib
+          shlwapi.lib
+          OpenGL32.lib
+          GLU32.lib
+          Ws2_32.lib
+          dbghelp.lib
+          d3d9.lib
+          d3dx9d.lib
+          DxErr.lib
+          dxguid.lib
+          dinput8.lib
+          dsound.lib
+          Strmiids.lib
+          Quartz.lib
 				</Libraries>
 			</Configuration>
 
-			<Configuration name="release">
+			<Configuration name="release" type="exe" platform="win32">
 				<OutDir>../../bin/win32</OutDir>
 				<OutFile>CodeSuppository.exe</OutFile>
-				<CFlags>/Zi /WX /W4 /fp:fast /WX /MD /O2</CFlags>
-				<LFlags>/DEBUG</LFlags>
+				<CFlags>/Zi /W4 /fp:fast /MD /O2</CFlags>
+				<LFlags></LFlags>
 				<Preprocessor type="define">
+					WIN32
+					_WINDOWS
+					UNICODE=1
+					_CRT_SECURE_NO_DEPRECATE
+          DEBUG_SERVER
+          USE_MEMORY_TRAPPING=1
+          OPEN_SOURCE=1
+          _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 					NDEBUG
 				</Preprocessor>
 				<SearchPaths type="header">
@@ -61,40 +77,40 @@
           ../../include/MeshImport
 				</SearchPaths>
 				<SearchPaths type="library">
-					../../ext/DirectX_October2006
+					../../ext/DirectX_June2010/x86
 				</SearchPaths>
 				<Libraries>
+          odbc32.lib
+          odbccp32.lib
+          winmm.lib
+          comctl32.lib
+          pdh.lib
+          shlwapi.lib
+          OpenGL32.lib
+          GLU32.lib
+          Ws2_32.lib
+          dbghelp.lib
+          d3d9.lib
+          d3dx9.lib
+          DxErr.lib
+          dxguid.lib
+          dinput8.lib
+          dsound.lib
+          Strmiids.lib
+          Quartz.lib
 				</Libraries>
 			</Configuration>
 
 			<Libraries>
-				odbc32.lib
-				odbccp32.lib
-				winmm.lib
-				comctl32.lib
-				pdh.lib
-				shlwapi.lib
-				OpenGL32.lib
-				GLU32.lib
-				Ws2_32.lib
-				dbghelp.lib
-				d3d9.lib
-				d3dx9.lib
-				dxerr9.lib
-				dxguid.lib
-				dinput8.lib
-				dsound.lib
-        	Strmiids.lib
-        	Quartz.lib
 			</Libraries>
 
 			<SearchPaths type="header">
 				../../app/CodeSuppository
         ../../src
         ../../include
-				../../ext/DirectX_October2006
+				../../ext/DirectX_June2010
 			</SearchPaths>
-			<Files name="DirectX Header Files" root="../../ext/DirectX_October2006" type="header">
+			<Files name="DirectX Header Files" root="../../ext/DirectX_June2010" type="header">
 			</Files>
 			<Files name="resources" root="../../app/CodeSuppository">
 			  *.rc

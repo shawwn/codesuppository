@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C667553-6365-118B-1B30-CD3053732760}</ProjectGuid>
+    <RootNamespace>CodeSuppository</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <OutDir>./../../bin/win32\</OutDir>
+    <IntDir>./Win32/CodeSuppository/debug\</IntDir>
+    <TargetExt>.exe</TargetExt>
+    <TargetName>CodeSuppositoryDEBUG</TargetName>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <ClCompile>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalOptions>/W4</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./../../app/CodeSuppository;./../../src;./../../include;./../../ext/DirectX_June2010;./../../include/common/snippets;./../../include/common/compression;./../../include/MeshImport;./../../app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE=1;_CRT_SECURE_NO_DEPRECATE;DEBUG_SERVER;USE_MEMORY_TRAPPING=1;OPEN_SOURCE=1;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/DEBUG</AdditionalOptions>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;winmm.lib;comctl32.lib;pdh.lib;shlwapi.lib;OpenGL32.lib;GLU32.lib;Ws2_32.lib;dbghelp.lib;d3d9.lib;d3dx9d.lib;DxErr.lib;dxguid.lib;dinput8.lib;dsound.lib;Strmiids.lib;Quartz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CodeSuppositoryDEBUG.exe</OutputFile>
+      <AdditionalLibraryDirectories>./../../ext/DirectX_June2010/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(OutDir)/CodeSuppositoryDEBUG.exe.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+    </ResourceCompile>
+    <ProjectReference>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <OutDir>./../../bin/win32\</OutDir>
+    <IntDir>./Win32/CodeSuppository/release\</IntDir>
+    <TargetExt>.exe</TargetExt>
+    <TargetName>CodeSuppository</TargetName>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalOptions>/W4</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>./../../app/CodeSuppository;./../../src;./../../include;./../../ext/DirectX_June2010;./../../app;./../../include/common/snippets;./../../include/MeshImport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE=1;_CRT_SECURE_NO_DEPRECATE;DEBUG_SERVER;USE_MEMORY_TRAPPING=1;OPEN_SOURCE=1;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;winmm.lib;comctl32.lib;pdh.lib;shlwapi.lib;OpenGL32.lib;GLU32.lib;Ws2_32.lib;dbghelp.lib;d3d9.lib;d3dx9.lib;DxErr.lib;dxguid.lib;dinput8.lib;dsound.lib;Strmiids.lib;Quartz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CodeSuppository.exe</OutputFile>
+      <AdditionalLibraryDirectories>./../../ext/DirectX_June2010/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(OutDir)/CodeSuppository.exe.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+    </ResourceCompile>
+    <ProjectReference>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\app\CodeSuppository\ThreadFrac.rc">
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\app\CodeSuppository\CodeSuppository.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\menu.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\MyFluid.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\PhysX.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\PlaySpriteBuffer.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\PlotTexture.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\plugins.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\renderpacket.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\resource.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\SplitMeshApp.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\SplitMeshMain.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\stdafx.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\terrain.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestArrowHead.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestAsc2Bin.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestAutoGeometry.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestBestFitCapsule.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestBestFitOBB.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestBestFitPlane.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestClipper.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestCompression.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestConcavity.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestConvexDecomposition.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestDfrac.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestErosion.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestFastAstar.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestFileInterface.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestFrustum.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestGestalt.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestInPlaceParser.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestIslandGeneration.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestKdTree.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestKeyValueIni.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestLookAt.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMapPal.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMarchingCubes.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMeshCleanup.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMeshConsolidation.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMeshVolume.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestPlaneTri.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestSas.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestSendAIM.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestSendMail.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestSplitMesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestStanHull.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestTexturePacker.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestTjunctions.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestUntileUV.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestVectorFont.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestVertexLookup.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestWildCard.h">
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestWinMsg.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\app\shared\MeshSystem\MeshSystemHelper.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\app\shared\MeshSystem\MeshSystemHelper.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\pd3d\AgScreenPipe.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\g_terrain.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\Pd3d.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\shader.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\water.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\wood.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\zvidcap.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\src\pd3d\Ag.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\AgScreenPipe.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\shader.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\terrain.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\water.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\wood.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\zvidcap.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\pd3d\pd3d.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\app\CodeSuppository\BestFit.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\CodeSuppository.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\CodeSuppositoryMain.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\menu.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\MyFluid.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\PhysX.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\PlaySpriteBuffer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\PlotTexture.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\plugins.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\SplitMeshApp.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\terrain.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestArrowHead.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestAsc2Bin.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestAutoGeometry.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestBestFitCapsule.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestBestFitOBB.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestBestFitPlane.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestClipper.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestCompression.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestConcavity.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestConvexDecomposition.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestDfrac.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestErosion.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestFastAstar.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestFileInterface.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestFrustum.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestGestalt.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestInPlaceParser.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestIslandGeneration.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestKdTree.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestKeyValueIni.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestLookAt.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMapPal.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMarchingCubes.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMeshCleanup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMeshConsolidation.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMeshVolume.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestPlaneTri.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestSas.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestSendAIM.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestSendMail.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestSplitMesh.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestStanHull.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestTexturePacker.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestTjunctions.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestUntileUV.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestVectorFont.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestVertexLookup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestWildCard.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestWinMsg.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\include\MeshImport\MeshImport.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\MeshImport\MeshImport.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\MeshImport\MeshImportBuilder.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\common\tui\tui.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\src\common\tui\tui.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\common\Dxut\dxstdafx.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUT.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTenum.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTgui.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTMesh.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTmisc.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTRes.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTSettingsDlg.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTsound.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\GuiTui.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\src\common\Dxut\dxstdafx.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUT.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTenum.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTgui.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTMesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTmisc.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTRes.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTSettingsDlg.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTsound.h">
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\GuiTui.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\include\common\binding\binding.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\binding\binding.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\common\snippets\FloatMath.inl">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Foundation.inl">
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\creg.c">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MemoryModule.c">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\sqlite3.c">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\sqlite3async.c">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\tritri.c">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ArrowHead.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\asc2bin.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\AsciiPath.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\AutoGeometry.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\BinaryReader.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\BlobIO.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\boundingvolume.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\cd_hull.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\clipper.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\clock.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ConsolidateMesh.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ConvexDecomposition.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\cparser.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\crc.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\erode.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\fastipc.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\FastXml.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ffind.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\FileInterface.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\FileInterfaceExt.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\filesystem.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\FloatMath.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\frustum.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\gauss.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\gestalt.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\HeAstar.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\HexMem.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\htmltable.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ImportHeightMap.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\inparser.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\JobSwarm.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\keyvalue.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\KeyValueIni.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\KeyValueSpec.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\LockFreeQ.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\log.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MarchingCubes.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\memory.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MergedPath.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MeshCleanup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MeshConsolidate.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MeshIslandGeneration.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MicroAllocator.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MyMessageBox.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\nvstl.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\OpenClosedMesh.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\perlin4.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\PhysXHeightfield.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\qsortp.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\radixsort.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\rand.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\RandomNumbers.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\RaycastMesh.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\regexp.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\RemoveTjunctions.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\RenderDebug.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ResourceInterface.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ResourceUpdate.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\sendmail.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\SmoothPath.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\SplitMesh.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\SQLiteFS.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\StanHull.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\stringdict.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\sutil.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\systemcall.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\targa.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\telnet.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\TexturePacker.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ThreadConfig.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ThreadHull.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\timedevent.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\Triangulator.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\UntileUV.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\utf.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\VectorFont.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\wavefront.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\wildcard.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\winmsg.cpp">
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\ArrowHead.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\asc2bin.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\AsciiPath.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\AutoGeometry.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\BinaryReader.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\BlobIO.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\boundingvolume.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\cd_hull.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\circlejerk.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\clipper.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\clock.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ConsolidateMesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ConvexDecomposition.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\cparser.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\crc.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\creg.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\cycle.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\erode.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\fastipc.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\FastXml.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ffind.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\FileInterface.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\FileInterfaceExt.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\filesystem.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\FloatMath.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\fmem.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\frustum.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\gauss.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Geometry.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\gestalt.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\HashFunction.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\HashSet.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\HeAstar.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\HexMem.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\htmltable.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ImportHeightMap.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\IncludeWindows.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\inparser.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\JobSwarm.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\KdTree.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\keyvalue.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\KeyValueIni.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\KeyValueSpec.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\LockFreeQ.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\log.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MarchingCubes.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\memory.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MemoryGuard.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MemoryModule.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MergedPath.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MeshCleanup.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MeshConsolidate.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MeshIslandGeneration.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MicroAllocator.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MyMessageBox.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NvHashMap.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nx.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nx12F32.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nx16F32.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nx9F32.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxAssert.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxBitField.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxBounds3.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxBox.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxCapsule.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nxf.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxFoundation.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxI16Vec3.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxMat33.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxMat34.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\nxmat44.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxMath.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxPlane.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxPool.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxProfiler.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxQuat.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxQuickSort.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxRay.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxSegment.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxSimpleTriangleMesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxSimpleTypes.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxSphere.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxStream.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxUserAllocator.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxUtilities.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxVec3.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxVec4.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxVolumeIntegration.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\OpenClosedMesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\perlin4.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\PhysXHeightfield.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\pool.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\qsortp.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\radixsort.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\rand.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\RandomNumbers.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\RaycastMesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\regexp.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\RemoveTjunctions.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\RenderDebug.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ResourceInterface.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ResourceUpdate.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\safeStdio.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sendmail.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SimpleMesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SimplePool.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\simplevector.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SmoothPath.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SortedSet.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SplitMesh.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sqlite3.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sqlite3async.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sqlite3ext.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SQLiteFS.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\stable.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\StanHull.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\streamer.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\stringdict.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sutil.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\systemcall.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\targa.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\telnet.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\TexturePacker.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ThreadConfig.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ThreadHull.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\timedevent.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\timelog.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Triangulator.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\tritri.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\UntileUV.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\UserMemAlloc.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\utf.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\VectorFont.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\viewtest.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\wavefront.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\wildcard.h">
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\winmsg.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Pd3d\pd3d.h">
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

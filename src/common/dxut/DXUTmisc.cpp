@@ -2613,8 +2613,8 @@ HRESULT CDXUTDirectionWidget::StaticOnCreateDevice( IDirect3DDevice9* pd3dDevice
     "{\r\n"
     "    pass P0\r\n"
     "    {\r\n"
-    "        VertexShader = compile vs_1_1 RenderWith1LightNoTextureVS();\r\n"
-    "        PixelShader  = compile ps_1_1 RenderWith1LightNoTexturePS();\r\n"
+    "        VertexShader = compile vs_2_0 RenderWith1LightNoTextureVS();\r\n"
+    "        PixelShader  = compile ps_2_0 RenderWith1LightNoTexturePS();\r\n"
     "    }\r\n"
     "}\r\n"
     "";

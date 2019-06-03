@@ -376,7 +376,16 @@ Pd3d * createPd3d(NxI32 version_number,NVSHARE::SystemServices *services);
 
 #define PD3D_VERSION 7  // version 0.01
 
+#ifdef WIN32
+#ifdef PD3D_EXPORTS
+#define PD3D_API __declspec(dllexport)
+#else
+#define PD3D_API __declspec(dllimport)
+#endif
+#else
+#define PD3D_API
+#endif
 
-extern NVSHARE::Pd3d *gPd3d;
+extern PD3D_API NVSHARE::Pd3d *gPd3d;
 
 #endif

@@ -2651,7 +2651,7 @@ void TuiElement::GetOnLoadOnExitCommand( char *buff, NxI32 buffLen, const String
 					if ( mArgs.size() > k-1 )
 					{
 						char val[64];
-						sprintf( val, "%s", mArgs[k-1] );
+						sprintf( val, "%s", mArgs[k-1].Get() );
 						strcat(  &buff[j], val );
 						j += (NxI32)strlen( val );
 					}

@@ -35,14 +35,14 @@ class CWaveFile;
 class CSoundManager
 {
 protected:
-    IDirectSound8* m_pDS;
+    IDirectSound* m_pDS;
 
 public:
     CSoundManager();
     ~CSoundManager();
 
     HRESULT Initialize( HWND hWnd, DWORD dwCoopLevel );
-    inline  LPDIRECTSOUND8 GetDirectSound() { return m_pDS; }
+    inline  LPDIRECTSOUND GetDirectSound() { return m_pDS; }
     HRESULT SetPrimaryBufferFormat( DWORD dwPrimaryChannels, DWORD dwPrimaryFreq, DWORD dwPrimaryBitRate );
     HRESULT Get3DListenerInterface( LPDIRECTSOUND3DLISTENER* ppDSListener );
 

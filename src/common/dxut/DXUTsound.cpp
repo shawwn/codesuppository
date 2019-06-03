@@ -49,7 +49,7 @@ HRESULT CSoundManager::Initialize( HWND  hWnd,
     SAFE_RELEASE( m_pDS );
 
     // Create IDirectSound using the primary sound device
-    if( FAILED( hr = DirectSoundCreate8( NULL, &m_pDS, NULL ) ) )
+    if( FAILED( hr = DirectSoundCreate( NULL, &m_pDS, NULL ) ) )
         return DXUT_ERR( L"DirectSoundCreate8", hr );
 
     // Set DirectSound coop level

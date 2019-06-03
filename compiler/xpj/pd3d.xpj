@@ -1,14 +1,10 @@
 <XPJ version="4">
 
 	<Project name="Pd3d" version="1">
-		<Export platform="win32" tool="vc9">../vc9</Export>
-		<Export platform="win32" tool="vc8">../vc8</Export>
-		<Export platform="win32" tool="vc7">../vc7</Export>
+    <Export platform="win32" tool="vc14">../vc14win32</Export>
 
 		<Target name="Pd3d">
-			<Export platform="win32" tool="vc9">../vc9</Export>
-			<Export platform="win32" tool="vc8">../vc8</Export>
-			<Export platform="win32" tool="vc7">../vc7</Export>
+      <Export platform="win32" tool="vc14">../vc14win32</Export>
 
 			<Configuration name="default" platform="Win32" type="dll">
 				<Preprocessor type="define">
@@ -27,7 +23,7 @@
 				<Files name="Public Header Files" root="../../include/Pd3d" type="header">
 					*.h
 				</Files>
-				<Files name="DirectX Header Files" root="../../ext/DirectX_October2006" type="header">
+				<Files name="DirectX Header Files" root="../../ext/DirectX_June2010" type="header">
           *.h
 				</Files>
 				<Files name="Common Include-Binding Files" root="../../include/common" type="header">
@@ -70,16 +66,14 @@
 				<OutDir>../../bin/win32</OutDir>
 				<ImpDir>../../lib/win32</ImpDir>
 				<SearchPaths type="header">
-        ../../ext/DirectX_October2006
           ../../include
           ../../src
           ../../include/common/Foundation
           ../../include/common/snippets
-				"C:/Program Files/Microsoft DirectX SDK (October 2006)/Include"
+          ../../ext/DirectX_June2010
 				</SearchPaths>
 				<SearchPaths type="library">
-          ../../ext/DirectX_October2006
-					"C:/Program Files/Microsoft DirectX SDK (October 2006)/Lib/x86"
+          ../../ext/DirectX_June2010/x86
 				</SearchPaths>
 				<Dependencies>
 				</Dependencies>
@@ -95,33 +89,39 @@
 				Ws2_32.lib
 				dbghelp.lib
 				d3d9.lib
-				d3dx9.lib
-				dxerr9.lib
+				dxerr.lib
 				dxguid.lib
 				dinput8.lib
 				dsound.lib
         Strmiids.lib
         Quartz.lib
 				</Libraries>
- 				<LFlags tool="vc8">/NODEFAULTLIB:libcp.lib</LFlags>
 			</Configuration>
 
 			<Configuration name="debug">
-				<OutFile>Pd3d.dll</OutFile>
-				<CFlags>/WX /W4 /fp:fast /WX /MDd /ZI  </CFlags>
+				<OutFile>Pd3dDEBUG.dll</OutFile>
+				<CFlags>/W4 /fp:fast /MDd /ZI  </CFlags>
 				<LFlags>/DEBUG</LFlags>
 				<Preprocessor type="define">
 					_DEBUG
+          _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 				</Preprocessor>
+				<Libraries>
+          d3dx9d.lib
+				</Libraries>
 			</Configuration>
 
 			<Configuration name="release">
 				<OutFile>Pd3d.dll</OutFile>
-				<CFlags>/WX /W4 /fp:fast /WX /O2 /MD  </CFlags>
-				<LFlags>/DEBUG</LFlags>
+				<CFlags>/W4 /fp:fast /O2 /MD  </CFlags>
+				<LFlags></LFlags>
 				<Preprocessor type="define">
 					NDEBUG
+          _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 				</Preprocessor>
+				<Libraries>
+          d3dx9.lib
+				</Libraries>
 			</Configuration>
 
 		</Target>

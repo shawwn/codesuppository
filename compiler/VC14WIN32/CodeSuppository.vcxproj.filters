@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resources">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\app\CodeSuppository\ThreadFrac.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Internal Header Files">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\app\CodeSuppository\CodeSuppository.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\menu.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\MyFluid.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\PhysX.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\PlaySpriteBuffer.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\PlotTexture.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\plugins.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\renderpacket.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\resource.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\SplitMeshApp.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\SplitMeshMain.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\stdafx.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\terrain.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestArrowHead.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestAsc2Bin.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestAutoGeometry.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestBestFitCapsule.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestBestFitOBB.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestBestFitPlane.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestClipper.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestCompression.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestConcavity.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestConvexDecomposition.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestDfrac.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestErosion.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestFastAstar.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestFileInterface.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestFrustum.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestGestalt.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestInPlaceParser.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestIslandGeneration.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestKdTree.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestKeyValueIni.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestLookAt.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMapPal.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMarchingCubes.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMeshCleanup.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMeshConsolidation.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestMeshVolume.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestPlaneTri.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestSas.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestSendAIM.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestSendMail.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestSplitMesh.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestStanHull.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestTexturePacker.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestTjunctions.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestUntileUV.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestVectorFont.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestVertexLookup.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestWildCard.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\CodeSuppository\TestWinMsg.h">
+      <Filter>Internal Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Pd3d\pd3d.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shared Application Source">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shared Application Source\MeshSystem">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\app\shared\MeshSystem\MeshSystemHelper.cpp">
+      <Filter>Shared Application Source\MeshSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\app\shared\MeshSystem\MeshSystemHelper.h">
+      <Filter>Shared Application Source\MeshSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="PD3D">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\pd3d\AgScreenPipe.cpp">
+      <Filter>PD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\g_terrain.cpp">
+      <Filter>PD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\Pd3d.cpp">
+      <Filter>PD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\shader.cpp">
+      <Filter>PD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\water.cpp">
+      <Filter>PD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\wood.cpp">
+      <Filter>PD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pd3d\zvidcap.cpp">
+      <Filter>PD3D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\src\pd3d\Ag.h">
+      <Filter>PD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\AgScreenPipe.h">
+      <Filter>PD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\shader.h">
+      <Filter>PD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\terrain.h">
+      <Filter>PD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\water.h">
+      <Filter>PD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\wood.h">
+      <Filter>PD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pd3d\zvidcap.h">
+      <Filter>PD3D</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="PD3D Header">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\pd3d\pd3d.h">
+      <Filter>PD3D Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\app\CodeSuppository\BestFit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\CodeSuppository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\CodeSuppositoryMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\MyFluid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\PhysX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\PlaySpriteBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\PlotTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\plugins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\SplitMeshApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestArrowHead.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestAsc2Bin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestAutoGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestBestFitCapsule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestBestFitOBB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestBestFitPlane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestClipper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestCompression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestConcavity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestConvexDecomposition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestDfrac.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestErosion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestFastAstar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestFileInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestFrustum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestGestalt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestInPlaceParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestIslandGeneration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestKdTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestKeyValueIni.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestLookAt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMapPal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMarchingCubes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMeshCleanup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMeshConsolidation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestMeshVolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestPlaneTri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestSas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestSendAIM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestSendMail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestSplitMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestStanHull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestTexturePacker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestTjunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestUntileUV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestVectorFont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestVertexLookup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestWildCard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\app\CodeSuppository\TestWinMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MeshImport Files">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\include\MeshImport\MeshImport.cpp">
+      <Filter>MeshImport Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\include\MeshImport\MeshImport.h">
+      <Filter>MeshImport Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\MeshImport\MeshImportBuilder.h">
+      <Filter>MeshImport Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common Source Files">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common Source Files\tui">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\common\tui\tui.cpp">
+      <Filter>Common Source Files\tui</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\src\common\tui\tui.h">
+      <Filter>Common Source Files\tui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common Source Files\Dxut">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\common\Dxut\dxstdafx.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUT.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTenum.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTgui.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTMesh.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTmisc.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTRes.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTSettingsDlg.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\DXUTsound.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\Dxut\GuiTui.cpp">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\src\common\Dxut\dxstdafx.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUT.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTenum.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTgui.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTMesh.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTmisc.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTRes.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTSettingsDlg.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\DXUTsound.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Dxut\GuiTui.h">
+      <Filter>Common Source Files\Dxut</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Depenency Files">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Depenency Files\binding">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\include\common\binding\binding.cpp">
+      <Filter>Depenency Files\binding</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\binding\binding.h">
+      <Filter>Depenency Files\binding</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Depenency Files\snippets">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\common\snippets\FloatMath.inl">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Foundation.inl">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\include\common\snippets\creg.c">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MemoryModule.c">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\sqlite3.c">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\sqlite3async.c">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\tritri.c">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ArrowHead.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\asc2bin.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\AsciiPath.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\AutoGeometry.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\BinaryReader.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\BlobIO.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\boundingvolume.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\cd_hull.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\clipper.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\clock.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ConsolidateMesh.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ConvexDecomposition.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\cparser.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\crc.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\erode.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\fastipc.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\FastXml.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ffind.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\FileInterface.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\FileInterfaceExt.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\filesystem.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\FloatMath.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\frustum.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\gauss.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\gestalt.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\HeAstar.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\HexMem.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\htmltable.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ImportHeightMap.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\inparser.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\JobSwarm.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\keyvalue.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\KeyValueIni.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\KeyValueSpec.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\LockFreeQ.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\log.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MarchingCubes.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\memory.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MergedPath.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MeshCleanup.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MeshConsolidate.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MeshIslandGeneration.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MicroAllocator.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\MyMessageBox.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\nvstl.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\OpenClosedMesh.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\perlin4.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\PhysXHeightfield.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\qsortp.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\radixsort.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\rand.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\RandomNumbers.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\RaycastMesh.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\regexp.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\RemoveTjunctions.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\RenderDebug.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ResourceInterface.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ResourceUpdate.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\sendmail.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\SmoothPath.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\SplitMesh.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\SQLiteFS.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\StanHull.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\stringdict.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\sutil.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\systemcall.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\targa.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\telnet.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\TexturePacker.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ThreadConfig.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\ThreadHull.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\timedevent.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\Triangulator.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\UntileUV.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\utf.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\VectorFont.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\wavefront.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\wildcard.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\common\snippets\winmsg.cpp">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\include\common\snippets\ArrowHead.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\asc2bin.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\AsciiPath.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\AutoGeometry.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\BinaryReader.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\BlobIO.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\boundingvolume.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\cd_hull.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\circlejerk.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\clipper.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\clock.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ConsolidateMesh.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ConvexDecomposition.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\cparser.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\crc.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\creg.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\cycle.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\erode.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\fastipc.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\FastXml.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ffind.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\FileInterface.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\FileInterfaceExt.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\filesystem.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\FloatMath.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\fmem.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\frustum.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\gauss.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Geometry.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\gestalt.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\HashFunction.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\HashSet.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\HeAstar.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\HexMem.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\htmltable.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ImportHeightMap.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\IncludeWindows.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\inparser.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\JobSwarm.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\KdTree.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\keyvalue.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\KeyValueIni.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\KeyValueSpec.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\LockFreeQ.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\log.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MarchingCubes.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\memory.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MemoryGuard.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MemoryModule.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MergedPath.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MeshCleanup.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MeshConsolidate.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MeshIslandGeneration.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MicroAllocator.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\MyMessageBox.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NvHashMap.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nx.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nx12F32.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nx16F32.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nx9F32.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxAssert.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxBitField.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxBounds3.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxBox.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxCapsule.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Nxf.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxFoundation.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxI16Vec3.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxMat33.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxMat34.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\nxmat44.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxMath.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxPlane.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxPool.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxProfiler.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxQuat.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxQuickSort.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxRay.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxSegment.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxSimpleTriangleMesh.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxSimpleTypes.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxSphere.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxStream.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxUserAllocator.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxUtilities.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxVec3.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxVec4.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\NxVolumeIntegration.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\OpenClosedMesh.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\perlin4.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\PhysXHeightfield.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\pool.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\qsortp.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\radixsort.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\rand.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\RandomNumbers.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\RaycastMesh.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\regexp.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\RemoveTjunctions.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\RenderDebug.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ResourceInterface.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ResourceUpdate.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\safeStdio.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sendmail.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SimpleMesh.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SimplePool.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\simplevector.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SmoothPath.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SortedSet.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SplitMesh.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sqlite3.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sqlite3async.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sqlite3ext.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\SQLiteFS.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\stable.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\StanHull.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\streamer.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\stringdict.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\sutil.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\systemcall.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\targa.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\telnet.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\TexturePacker.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ThreadConfig.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\ThreadHull.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\timedevent.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\timelog.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\Triangulator.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\tritri.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\UntileUV.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\UserMemAlloc.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\utf.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\VectorFont.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\viewtest.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\wavefront.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\wildcard.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\common\snippets\winmsg.h">
+      <Filter>Depenency Files\snippets</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Plugin Dependencies">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Plugin Dependencies\Pd3d">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Pd3d\pd3d.h">
+      <Filter>Plugin Dependencies\Pd3d</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

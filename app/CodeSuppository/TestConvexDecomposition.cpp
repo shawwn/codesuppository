@@ -19,6 +19,8 @@ using namespace NVSHARE;
 
 #define SHOW_TIME 1000
 
+extern bool gShowWireframe;
+
 class ConvexResults : public ConvexDecomposition::ConvexDecompInterface
 {
 public:
@@ -33,7 +35,7 @@ public:
     NxU32 color = gRenderDebug->getDebugColor();
 
 	gRenderDebug->pushRenderState();
-	gRenderDebug->setCurrentDisplayTime(15.0f);
+	gRenderDebug->setCurrentDisplayTime(120.0f);
     mCount++;
 
     if ( mFitObb )
@@ -58,7 +60,7 @@ public:
       bmax[0] = sides[0]*0.5f;
       bmax[1] = sides[1]*0.5f;
       bmax[2] = sides[2]*0.5f;
-	  gRenderDebug->setCurrentState(DebugRenderState::SolidShaded);
+	  gRenderDebug->setCurrentState(DebugRenderState::DoubleSidedWire);
 	  gRenderDebug->setCurrentColor(color,0xFFFFFF);
       gRenderDebug->DebugOrientedBound(bmin,bmax,matrix);
 
@@ -67,7 +69,7 @@ public:
     }
     else
     {
-	  gRenderDebug->setCurrentState(DebugRenderState::SolidShaded);
+      gRenderDebug->setCurrentState(gShowWireframe ? DebugRenderState::DoubleSidedWire : DebugRenderState::SolidShaded);
 	  gRenderDebug->setCurrentColor(color,0xFFFFFF);
       for (NxU32 i=0; i<result.mHullTcount; i++)
       {

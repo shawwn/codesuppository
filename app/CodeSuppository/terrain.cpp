@@ -147,8 +147,13 @@ public:
         dest->mPos[0] = source.x;
         dest->mPos[1] = source.y;
         dest->mPos[2] = source.z;
-        dest->mTexel[0] = source.x*TSCALE;
-        dest->mTexel[1] = source.z*TSCALE;
+        dest->mTexel1[0] = source.x*TSCALE;
+        dest->mTexel1[1] = source.z*TSCALE;
+        dest->mTexel2[0] = source.y*TSCALE;
+        dest->mTexel2[1] = source.z*TSCALE;
+        dest->mTexel3[0] = source.x*TSCALE;
+        dest->mTexel3[1] = source.y*TSCALE;
+
       }
 
       fm_computeMeanNormals(vcount,gv->mPos,sizeof(NVSHARE::Pd3dGraphicsVertex),gv->mNormal,sizeof(NVSHARE::Pd3dGraphicsVertex),indices.size()/3,&indices[0]);

@@ -64,6 +64,7 @@
 using namespace NVSHARE;
 
 CodeSuppository *gCodeSuppository=0;
+bool gShowWireframe;
 
 typedef std::vector< RenderPacket * > RenderPacketVector;
 
@@ -351,6 +352,7 @@ public:
         break;
       case CSC_SHOW_WIREFRAME:
         mShowWireframe = state;
+        gShowWireframe = state;
         break;
       case CSC_SHOW_SKELETON:
         mShowSkeleton = state;
